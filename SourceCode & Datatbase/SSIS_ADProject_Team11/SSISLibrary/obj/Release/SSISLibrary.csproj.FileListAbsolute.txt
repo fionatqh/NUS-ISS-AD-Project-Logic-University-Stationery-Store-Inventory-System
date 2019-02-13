@@ -1,0 +1,23 @@
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Release\SSISLibrary.dll.config
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Release\SSISLibrary.dll
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Release\SSISLibrary.pdb
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Release\EntityFramework.dll
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Release\EntityFramework.SqlServer.dll
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Release\EntityFramework.xml
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Release\EntityFramework.SqlServer.xml
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.csproj.CoreCompileInputs.cache
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.csproj.CopyComplete
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.dll
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.pdb
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\bin\Release\SSISLibrary.dll.config
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\bin\Release\SSISLibrary.dll
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\bin\Release\SSISLibrary.pdb
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\bin\Release\EntityFramework.dll
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\bin\Release\EntityFramework.xml
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.csprojAssemblyReference.cache
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.csproj.CoreCompileInputs.cache
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.csproj.CopyComplete
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.dll
+C:\Users\fiona\.git\LogicUniversity\SourceCode & Datatbase\SSIS_ADProject_Team11\SSISLibrary\obj\Release\SSISLibrary.pdb

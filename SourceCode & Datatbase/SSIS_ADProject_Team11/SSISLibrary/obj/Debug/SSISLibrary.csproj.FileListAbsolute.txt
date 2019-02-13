@@ -1,0 +1,11 @@
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\obj\Debug\SSISLibrary.csproj.CoreCompileInputs.cache
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Debug\SSISLibrary.dll.config
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Debug\SSISLibrary.dll
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Debug\SSISLibrary.pdb
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Debug\EntityFramework.dll
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Debug\EntityFramework.xml
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\obj\Debug\SSISLibrary.csproj.CopyComplete
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\obj\Debug\SSISLibrary.dll
+E:\Project\SSIS_ADProject_Team11\SSISLibrary\obj\Debug\SSISLibrary.pdb

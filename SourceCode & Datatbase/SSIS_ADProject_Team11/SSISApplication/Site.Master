@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SSISApplication.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My SSIS Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">SSIS Application</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <% if (Context.User.IsInRole("employee"))
+                            { %>
+                        <li><a runat="server" href="~/Views/CommonViews/RequestStationary">Request Stationary</a></li>
+                        <li><a runat="server" href="~/Views/CommonViews/RequestStatus">Request Status</a></li>
+                        <%}
+                        %>
+                        <% if (Context.User.IsInRole("depthead") || Context.User.IsInRole("delegatehead"))
+                            { %>
+                        <li><a runat="server" href="~/Views/DeptHeadViews/ManagePendingRequests">Manage Pending Requests</a></li>
+                        <li><a runat="server" href="~/Views/DeptHeadViews/ViewApprovedRequests">View Approved Requests</a></li>
+                        <li><a runat="server" href="~/Views/DeptHeadViews/ViewRejectedRequests">View Rejected Requests</a></li>
+                        <li><a runat="server" href="~/Views/DeptHeadViews/ModifyDepartmentDetails">Modify Department Details</a></li>
+                        <%}
+                        %>
+                        <% if (Context.User.IsInRole("deptrep"))
+                            { %>
+                        <li><a runat="server" href="~/Views/CommonViews/RequestStationary">Request Stationary</a></li>
+                        <li><a runat="server" href="~/Views/CommonViews/RequestStatus">Request Status</a></li>
+                        <li><a runat="server" href="~/Views/DeptRepViews/ViewDisbursments">View Disbursment Lists</a></li>
+                        <li><a runat="server" href="~/Views/DeptRepViews/ModifyCollectionPoint">Modify Collection Point</a></li>
+                        <%}
+                        %>
+                        <% if (Context.User.IsInRole("storemanager") || Context.User.IsInRole("storesupervisor"))
+                            { %>
+                        <li><a runat="server" href="~/Views/StoreSupervisorViews/ManageNewDiscrepancy">New Discrepancies</a></li>
+                        <li><a runat="server" href="~/Views/StoreSupervisorViews/AdjustmentVouchers">Adjustment Voucher History</a></li>
+                        <li><a runat="server" href="~/Views/StoreSupervisorViews/ViewReports">View Reports</a></li>
+                        <%}
+                        %>
+                        <% if (Context.User.IsInRole("storeclerk"))
+                            { %>
+                        <li><a runat="server" href="~/Views/CommonViews/RequestStationary">Request Stationary</a></li>
+                        <li><a runat="server" href="~/Views/CommonViews/RequestStatus">Request Status</a></li>
+                        <li><a runat="server" href="~/Views/StoreClerkViews/ProcessRequisitions">Requisitions</a></li>
+                        <li><a runat="server" href="~/Views/StoreClerkViews/ManageRetrievals">Retrievals</a></li>
+                        <li><a runat="server" href="~/Views/StoreClerkViews/ManageDisbursmentLists">Disbursments</a></li>
+                        <li><a runat="server" href="~/Views/StoreClerkViews/ViewInventorystatus">Inventory</a></li>
+                        <li><a runat="server" href="~/Views/StoreClerkViews/ProcessPurchaseOrder">Purchase Orders</a></li>
+                        <li><a runat="server" href="~/Views/StoreClerkViews/ReportDiscrepency">Discrepancies</a></li>
+                        <li><a runat="server" href="~/Views/StoreClerkViews/ManageDeliveryOrder">Delivery Orders</a></li>
+
+                        <%}
+                        %>
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <%--<li><a runat="server" href="~/Account/Register">Register</a></li>--%>
+                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - My SSIS Application</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
